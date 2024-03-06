@@ -1,6 +1,4 @@
 import 'package:firebase_database/firebase_database.dart';
-import 'package:firedart/firestore/firestore.dart';
-import 'package:firedart/firestore/models.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:cocofapp/shared/components/components.dart';

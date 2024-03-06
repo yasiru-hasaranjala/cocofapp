@@ -1,7 +1,5 @@
 import 'package:cocofapp/shared/components/components.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:firedart/firestore/firestore.dart';
-import 'package:firedart/firestore/models.dart';
 import 'package:flutter/material.dart';
 import 'package:cocofapp/shared/globals.dart' as globals;
 
@@ -252,19 +250,19 @@ class _MenuState extends State<Menu> {
                   ],
                 ),
                 SizedBox(height: globals.isAdmin ? 20 : 1),
-                globals.isAdmin ? Center(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.black45,
-                      elevation: 0,
-                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                    ),
-                    onPressed: () {
-                      _displayTextInputDialog(context);
-                    },
-                    child: const Text("Reset Data", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
-                  ),
-                ) : const SizedBox(height: 1),
+                // globals.isAdmin ? Center(
+                //   child: ElevatedButton(
+                //     style: ElevatedButton.styleFrom(
+                //       backgroundColor: Colors.black45,
+                //       elevation: 0,
+                //       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                //     ),
+                //     onPressed: () {
+                //       _displayTextInputDialog(context);
+                //     },
+                //     child: const Text("Reset Data", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                //   ),
+                // ) : const SizedBox(height: 1),
               ],
             ),
           ),

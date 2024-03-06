@@ -1,7 +1,4 @@
 import 'dart:ui';
-
-import 'package:firebase_database/firebase_database.dart';
-import 'package:firedart/firestore/firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:cocofapp/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
