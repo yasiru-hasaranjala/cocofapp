@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Text(
-              'Mobile',
+              'Web',
               style: TextStyle(
                 color: Colors.black45,
                 fontSize: 24.0,

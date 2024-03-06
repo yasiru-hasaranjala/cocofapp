@@ -55,17 +55,17 @@ class _MenuState extends State<Menu> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 10,
                 ),
                 const Text(
-                  'CoCoFApp',
+                  'CoCoFApp Web ',
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(0.0),
+                  padding: const EdgeInsets.only(top: 25),
                   child: Image.asset('assets/coir.png', scale: 1.75),
                 ),
                 StreamBuilder(
