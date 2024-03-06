@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:cocofapp/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -8,13 +9,16 @@ import 'package:cocofapp/modules/views/coir_out.dart';
 import 'package:cocofapp/modules/views/payments.dart';
 import 'package:cocofapp/modules/views/salary.dart';
 import 'package:cocofapp/modules/login/login.dart';
+import 'package:cocofapp/shared/globals.dart' as globals;
 
 const apiKey = 'AIzaSyCqKk3e7YzakTJmhWaCsXuP9qxtAY8jTLE';
 const projectId = 'cocofapp';
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  //
+  WidgetsFlutterBinding.ensureInitialized();
+  globals.isMobile = kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.iOS ||
+          defaultTargetPlatform == TargetPlatform.android);
   // // This is the last thing you need to add.
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

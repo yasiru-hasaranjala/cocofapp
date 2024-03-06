@@ -224,7 +224,7 @@ class _CoirOutputsState extends State<CoirOutputs> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             halfButton(
-              text: 'Add Coir',
+              text: 'Sell Coir',
               width: size.width/2-30,
               function: () {
                 now = DateTime.now();

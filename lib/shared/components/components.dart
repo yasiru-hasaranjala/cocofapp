@@ -191,7 +191,6 @@ Widget textFieldMini({
           hintText: hinttext,
           focusColor: Colors.black45,
           fillColor: Colors.black12,
-          suffixIcon: suffixIcon,
           filled: true,
           hintStyle: const TextStyle(fontSize: 15,color: Colors.black26),
           errorBorder: const OutlineInputBorder(

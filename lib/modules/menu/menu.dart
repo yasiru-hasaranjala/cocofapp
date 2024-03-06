@@ -164,7 +164,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.teal,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 31, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                             ),
                             onPressed: () {
                               Navigator.pushNamed(context, "coir_in_screen");
@@ -178,7 +179,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.deepPurple,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 42, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 20, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 42, vertical: 20),
                             ),
                             onPressed: () {
                               Navigator.pushNamed(context, "coir_out_screen");
@@ -192,7 +194,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.red,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 67, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 45, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 67, vertical: 20),
                             ),
                             onPressed: () {
                               Navigator.pushNamed(context, "salary_screen");
@@ -209,7 +212,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.orange,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 49, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 31, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 49, vertical: 20),
                             ),
                             onPressed: () {
                               Navigator.pushNamed(context, "pay_screen");
@@ -223,7 +227,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.brown,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 18, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 38, vertical: 20),
                             ),
                             onPressed: () {
                               _displayMemberInputDialog(context);
@@ -237,7 +242,8 @@ class _MenuState extends State<Menu> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black45,
                               elevation: 0,
-                              padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
+                              padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 39, vertical: 15)
+                                                        : const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
                             ),
                             onPressed: () {
                               Navigator.pushNamed(context, "login_screen");
@@ -250,19 +256,20 @@ class _MenuState extends State<Menu> {
                   ],
                 ),
                 SizedBox(height: globals.isAdmin ? 20 : 1),
-                // globals.isAdmin ? Center(
-                //   child: ElevatedButton(
-                //     style: ElevatedButton.styleFrom(
-                //       backgroundColor: Colors.black45,
-                //       elevation: 0,
-                //       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                //     ),
-                //     onPressed: () {
-                //       _displayTextInputDialog(context);
-                //     },
-                //     child: const Text("Reset Data", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
-                //   ),
-                // ) : const SizedBox(height: 1),
+                globals.isAdmin ? Center(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black45,
+                      elevation: 0,
+                      padding: globals.isMobile ? const EdgeInsets.symmetric(horizontal: 39, vertical: 15)
+                                                : const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    ),
+                    onPressed: () {
+                      _displayTextInputDialog(context);
+                    },
+                    child: const Text("Reset Data", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                  ),
+                ) : const SizedBox(height: 1),
               ],
             ),
           ),
