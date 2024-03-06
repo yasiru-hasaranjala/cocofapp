@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "351613245539",
+    "firebase_url": "https://cocofapp-default-rtdb.firebaseio.com",
+    "project_id": "cocofapp",
+    "storage_bucket": "cocofapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351613245539:android:9706c391d464b45a814056",
+        "android_client_info": {
+          "package_name": "com.example.cocofapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe32JSClSk-oJWVZxbThi9in04gTN7W9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
